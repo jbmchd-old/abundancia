@@ -1,0 +1,53 @@
+<?php 
+    echo $this->doctype(); 
+    $this->plugin('basePath')->setBasePath('/public/');
+?>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Abundância Coaching</title>
+    
+        <?php echo $this->headTitle(' Abundância ')->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/idvisual/favicon.ico'])
+//                        ->prependStylesheet($this->basePath('css/aplicacao.css')) 
+                        ->prependStylesheet($this->basePath('css/global.css')) 
+                        ->prependStylesheet($this->basePath('ninestar-theme/color/default.css')) 
+                        ->prependStylesheet($this->basePath('ninestar-theme/css/style.css')) 
+                        ->prependStylesheet($this->basePath('ninestar-theme/css/animate.css')) 
+                        ->prependStylesheet($this->basePath('ninestar-theme/css/nivo-lightbox-theme/default/default.css')) 
+                        ->prependStylesheet($this->basePath('ninestar-theme/css/nivo-lightbox.css')) 
+                        ->prependStylesheet($this->basePath('ninestar-theme/font-awesome/css/font-awesome.min.css')) 
+                        ->prependStylesheet($this->basePath('ninestar-theme/css/bootstrap.min.css')) 
+        ?>
+
+    </head>
+    <body data-spy="scroll">
+        <?php echo $this->content; ?>
+        
+         <!-- Scripts -->
+        <?php echo $this->headScript()
+            ->prependFile($this->basePath('ninestar-theme/js/custom.js'))
+            ->prependFile($this->basePath('ninestar-theme/js/stellar.js'))
+            ->prependFile($this->basePath('ninestar-theme/js/nivo-lightbox.min.js'))
+            ->prependFile($this->basePath('ninestar-theme/js/jquery.scrollTo.js'))
+            ->prependFile($this->basePath('ninestar-theme/js/gnmenu.js'))
+            ->prependFile($this->basePath('ninestar-theme/js/classie.js'))
+            ->prependFile($this->basePath('ninestar-theme/js/jquery.easing.min.js'))
+            ->prependFile($this->basePath('ninestar-theme/js/bootstrap.min.js'))
+            ->prependFile($this->basePath('ninestar-theme/js/jquery.min.js'))
+        ?>
+
+    </body>
+</html>

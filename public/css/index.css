@@ -1,0 +1,43 @@
+/**
+idvisual
+    Vermelho:#e1202c Azul:#031a44
+*/
+.gn-menu {
+    /*border-bottom: 1px solid #031a44;*/
+}
+
+.gn-menu-main, .gn-menu-main a {
+    color: #e1202c
+}
+
+.gn-menu-main > li {
+    /*border-right: 1px solid #031a44;*/
+}
+
+.gn-icon-menu.gn-selected::before {
+    background: #e1202c;
+    box-shadow: 0 3px white, 0 -6px #e1202c, 0 -9px white, 0 -12px #e1202c;
+}
+
+.gn-icon-menu::before {
+    background: #e1202c;
+    box-shadow: 0 3px white, 0 -6px #e1202c, 0 -9px white, 0 -12px #e1202c;
+}
+
+.gn-menu-wrapper.gn-open-all {
+    width: 299px;
+}
+
+.company-social a {color: #FFF}
+
+.gn-menu-wrapper {
+    border-right: 1px solid #c6d0da;
+}
+
+.home-section{
+    padding-top: 75px;
+}
+
+footer{
+    background: #031a44
+}
