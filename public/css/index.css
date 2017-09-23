@@ -6,6 +6,10 @@ idvisual
     /*border-bottom: 1px solid #031a44;*/
 }
 
+.gn-menu-main, .gn-menu-main ul {
+    margin: 0 3px 0 0;
+}
+
 .gn-menu-main, .gn-menu-main a {
     color: #e1202c
 }
@@ -16,16 +20,16 @@ idvisual
 
 .gn-icon-menu.gn-selected::before {
     background: #e1202c;
-    box-shadow: 0 3px white, 0 -6px #e1202c, 0 -9px white, 0 -12px #e1202c;
+    box-shadow: 0 3px transparent, 0 -6px #e1202c, 0 -9px transparent, 0 -12px #e1202c;
 }
 
 .gn-icon-menu::before {
     background: #e1202c;
-    box-shadow: 0 3px white, 0 -6px #e1202c, 0 -9px white, 0 -12px #e1202c;
+    box-shadow: 0 3px transparent, 0 -6px #e1202c, 0 -9px transparent, 0 -12px #e1202c;
 }
 
 .gn-menu-wrapper.gn-open-all {
-    width: 299px;
+    width: 300px;
 }
 
 .company-social a {color: #FFF}
@@ -34,10 +38,14 @@ idvisual
     border-right: 1px solid #c6d0da;
 }
 
+.intro .slogan {padding: 40px 60px;}
+
 .home-section{
     padding-top: 75px;
 }
 
 footer{
-    background: #031a44
+    background: #234365
 }
+
+.abd-menu-icon i { padding: 0 20px; }
